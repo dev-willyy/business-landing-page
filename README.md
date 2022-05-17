@@ -2,8 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Targeted towards driving customers' interests in the brand
+### `Targeted towards driving recruiters' interests in my brand`
 
 ---
 
-## copy&; 2020, Williams Madu.
+## &copy; 2020, Williams Madu.
