@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import { FooterIconsWrap } from "../footer/footerElements";
+import Icons from "../Icons";
 import {
     HeroContainer,
     HeroWrapper,
@@ -63,6 +65,10 @@ const HeroSection = ({
                             <ImgWrap>
                                 <Img src={img} alt={alt} />
                             </ImgWrap>
+
+                            <FooterIconsWrap vertical>
+                                <Icons />
+                            </FooterIconsWrap>
                         </Column2>
                     </HeroRow>
                 </HeroWrapper>

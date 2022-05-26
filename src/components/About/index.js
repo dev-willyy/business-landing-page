@@ -72,7 +72,7 @@ const Experience = () => {
                     <SkillCardsContainer>
                         <SkillsCard bright>
                             <SkillsText>Product Designer</SkillsText>
-                            <SkillsText>Discover More →</SkillsText>
+                            <SkillsText adjusted>Discover More →</SkillsText>
                         </SkillsCard>
                         <SkillsCard>
                             <SkillsText wrapped>Front End Developer</SkillsText>

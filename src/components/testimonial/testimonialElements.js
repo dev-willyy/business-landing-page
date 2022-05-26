@@ -56,7 +56,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: -7.9rem;
-    padding: 0 15px;
+    padding: 0 16.2px;
     grid-area: col2;
 
     @media screen and (max-width: 768px) {

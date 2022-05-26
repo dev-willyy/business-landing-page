@@ -12,19 +12,27 @@ export const AboutContainer = styled.div`
 `;
 
 export const ImgRow = styled.div`
-    align-self: flex-start;
-    display: flex;
-    grid-auto-columns: minmax(auto, 1fr);
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 6.5rem;
+
+    @media screen and (max-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
 `;
 
 export const ImgContainer = styled.picture`
     margin-inline: 12px;
     width: 140px;
     height: 50px;
+
+    @media screen and (max-width: 960px) {
+        :last-of-type {
+            grid-column: span 2;
+            margin-left: 10%;
+        }
+    }
 `;
 
 export const IconText = styled.img`
@@ -142,10 +150,12 @@ export const SkillsCard = styled.div`
 
 export const SkillsText = styled.p`
     width: ${(props) => (props.wrapped ? "6rem" : "10rem")};
-    font-weight: bold;
     font-size: 1.1rem;
     text-align: left;
-    margin-top: -3.4px;
+    //margin-top: -3.4px;
+    font-size: ${(props) => (props.adjusted ? ".9rem" : "-1.1rem")};
+    font-weight: ${(props) => (props.adjusted ? "lighter" : "bold")};
+    margin-top: ${(props) => (props.adjusted ? "-4%" : "-3.4px")};
     word-wrap: break-word;
     line-height: 24px;
 `;

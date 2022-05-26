@@ -5,7 +5,7 @@ export const remarkOne = {
     lightTextDesc: true,
     topLine: "",
     headline:
-        ' "Michael is exceptionally talented & well rounded designer. He brings to our companies his infectious enthusiasm and creativity to everything he works on." ',
+        ' "Michael is an exceptionally talented & well rounded designer. He brings to our companies his infectious enthusiasm and creativity to everything he works on." ',
     description: "Felani Mul - CEO CloudBee",
     buttonLabel: "",
     imgStart: false,

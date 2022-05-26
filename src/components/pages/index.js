@@ -9,6 +9,7 @@ import Sidebar from "../Sidebar";
 import { remarkOne } from "../testimonial/Data";
 import ReviewSection from "../testimonial";
 import Footer from "../footer";
+import { buttonData } from "../footer/Data";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Home = () => {
             <Experience />
             <InfoSection {...homeObj1} />
             <ReviewSection {...remarkOne} />
-            <Footer />
+            <Footer {...buttonData} />
         </>
     );
 };

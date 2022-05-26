@@ -18,6 +18,7 @@ export const HeroWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
+    padding-left: 3.92%;
     justify-content: center;
 
     @media screen and (max-width: 768px) {
@@ -33,7 +34,6 @@ export const HeroRow = styled.div`
         imgStart ? `"col2 col1"` : `"col1 col2"`};
 
     @media screen and (max-width: 768px) {
-        ${"" /* box-sizing: content-box; */}
         min-height: 700px;
         grid-template-areas: ${({ imgStart }) =>
             imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
@@ -53,8 +53,11 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: -7.9rem;
+    margin-bottom: -8.96rem;
+    //margin-left: 5%;
     padding: 0 15px;
+    display: grid;
+    grid-template-columns: 19fr 1fr;
     grid-area: col2;
 
     @media screen and (max-width: 768px) {
@@ -110,5 +113,5 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 80%;
     margin: 0 0 10px 0;
-    padding-right: 0;
+    padding-right: ;
 `;

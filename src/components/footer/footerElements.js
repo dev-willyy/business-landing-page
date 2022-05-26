@@ -10,13 +10,13 @@ export const FooterRow = styled.div`
     height: 90%;
     width: 90%;
     margin-inline: 5%;
-    padding-inline: 5%;
+    padding-left: 7%;
     padding-bottom: 5%;
     padding-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-gap: 20px;
-    border: 0.2px solid #f0f00f;
+    //border: 0.2px solid #f0f00f;
 `;
 
 export const FooterColumn1 = styled.div`
@@ -25,7 +25,7 @@ export const FooterColumn1 = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    border: 0.2px solid blue;
+    //border: 0.2px solid blue;
 `;
 
 export const FooterH1Wrap = styled.div`
@@ -33,7 +33,7 @@ export const FooterH1Wrap = styled.div`
     height: 100%;
     padding-left: 2%;
     padding-top: 2.4%;
-    border: 0.2px solid white;
+    //border: 0.2px solid white;
 `;
 
 export const FooterH1 = styled.h1`
@@ -46,7 +46,7 @@ export const FooterPWrap = styled.div`
     width: 90%;
     height: 100%;
     padding: 2%;
-    border: 0.2px solid white;
+    //border: 0.2px solid white;
 `;
 
 export const FooterP = styled.p`
@@ -55,11 +55,29 @@ export const FooterP = styled.p`
     line-height: 1.6rem;
 `;
 
+export const FooterIconsWrap = styled.div`
+    display: grid;
+    padding: 1.2%;
+    padding-left: 1.66%;
+    color: white;
+    grid-template-columns: ${(props) =>
+        props.vertical ? "null" : "1fr 1fr 1fr"};
+    grid-template-rows: ${(props) =>
+        props.vertical ? "1fr 1fr 1fr " : "null"};
+    width: ${(props) => (props.vertical ? "100% " : "34%")};
+    height: ${(props) => (props.vertical ? "30% " : "60%")};
+    margin-top: ${(props) => props.vertical && "16rem"};
+    margin-right: ${(props) => props.vertical && ".5rem"};
+    grid-gap: 10px;
+    font-size: 1.6rem;
+`;
+
 export const FooterLinkWrap = styled.div`
     width: 90%;
     height: 100%;
     padding: 2%;
-    border: 0.2px solid white;
+    margin-top: -10%;
+    //border: 0.2px solid white;
 `;
 
 export const FooterLink = styled.a`
@@ -77,16 +95,16 @@ export const FooterColumn2 = styled.div`
     height: 70%;
     padding: 5%;
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
     grid-gap: 30px;
-    border: 0.2px solid blue;
+    //border: 0.2px solid blue;
 `;
 
 export const FooterH2Wrap = styled.div`
     width: 60%;
     height: 100%;
     padding: 2%;
-    border: 0.2px solid white;
+    //border: 0.2px solid white;
 `;
 
 export const FooterH2 = styled.h2`
@@ -104,13 +122,13 @@ export const FooterLabelWrap = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 38px;
-    border: 0.2px solid white;
+    //border: 0.2px solid white;
 `;
 
 export const FooterLabel = styled.label``;
 
 export const FooterInput = styled.input`
-    width: 90%;
+    width: 80%;
     height: 110%;
     font: 0.92rem var(--font-1);
     padding-left: 4%;
@@ -123,4 +141,13 @@ export const FooterInput = styled.input`
         color: white;
         opacity: 0.7;
     }
+`;
+
+export const BtnWrap = styled.div`
+    width: 90%;
+    height: 34%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10%;
+    padding-left: 2.2%;
 `;

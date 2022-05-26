@@ -1,5 +1,7 @@
 import React from "react";
+import { Button } from "../ButtonElements";
 import {
+    BtnWrap,
     FooterColumn1,
     FooterColumn2,
     FooterContainer,
@@ -7,6 +9,7 @@ import {
     FooterH1Wrap,
     FooterH2,
     FooterH2Wrap,
+    FooterIconsWrap,
     FooterInput,
     FooterLabel,
     FooterLabelWrap,
@@ -16,9 +19,9 @@ import {
     FooterPWrap,
     FooterRow,
 } from "./footerElements";
-// import Icons from "../Icons";
+import Icons from "../Icons";
 
-const Footer = () => {
+const Footer = ({ primary, dark, dark2, buttonLabel }) => {
     return (
         <>
             <FooterContainer>
@@ -33,7 +36,9 @@ const Footer = () => {
                                 id, eleifend justo vella ipsum dolor lacus.
                             </FooterP>
                         </FooterPWrap>
-                        {/* <Icons /> */}
+                        <FooterIconsWrap>
+                            <Icons />
+                        </FooterIconsWrap>
                         <FooterLinkWrap>
                             <FooterLink href="/">hallo@me.co →</FooterLink>
                         </FooterLinkWrap>
@@ -68,6 +73,16 @@ const Footer = () => {
                                 />
                             </FooterLabel>
                         </FooterLabelWrap>
+                        <BtnWrap>
+                            <Button
+                                to="home"
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1 : 0}
+                                dark2={dark2 ? 1 : 0}
+                            >
+                                {buttonLabel}
+                            </Button>
+                        </BtnWrap>
                     </FooterColumn2>
                 </FooterRow>
             </FooterContainer>
