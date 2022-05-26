@@ -1,21 +1,23 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const ReviewContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#2F3032")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "rgb(17, 17, 17)")};
+    padding-bottom: 5%;
+    margin-top: -18%;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
 `;
 
-export const HeroWrapper = styled.div`
-    display: grid;
+export const ReviewWrapper = styled.div`
     z-index: 1;
     height: 550px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
+    display: grid;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
@@ -25,15 +27,15 @@ export const HeroWrapper = styled.div`
     }
 `;
 
-export const HeroRow = styled.div`
+export const ReviewRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    padding-inline: 2.6%;
     grid-template-areas: ${({ imgStart }) =>
-        imgStart ? `"col2 col1"` : `"col1 col2"`};
+        imgStart ? `"col1 col2"` : `"col2 col1"`};
 
     @media screen and (max-width: 768px) {
-        ${"" /* box-sizing: content-box; */}
         min-height: 700px;
         grid-template-areas: ${({ imgStart }) =>
             imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
@@ -73,10 +75,10 @@ export const TextWrapper = styled.div`
     flex-basis: 100%;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
     margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.1;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
     font-weight: 600;
     color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
@@ -88,19 +90,14 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
-export const BtnWrap = styled.div`
-    display: flex;
-    justify-content: flex-start;
-`;
-
 export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 80%;
+    max-width: 400px;
+    height: 60%;
 
     @media screen and (max-width: 768px) {
         margin-bottom: 2rem;
@@ -108,7 +105,8 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+    height: 80%;
     width: 80%;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     padding-right: 0;
 `;

@@ -7,7 +7,6 @@ import {
     Column1,
     Column2,
     TextWrapper,
-    TopLine,
     Heading,
     Subtitle,
     BtnWrap,
@@ -19,7 +18,6 @@ const HeroSection = ({
     lightBg,
     id,
     imgStart,
-    topLine,
     lightText,
     headline,
     darkText,
@@ -38,7 +36,6 @@ const HeroSection = ({
                     <HeroRow imgStart={imgStart}>
                         <Column1 data-aos="fade-right">
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>
                                     {headline}
                                 </Heading>

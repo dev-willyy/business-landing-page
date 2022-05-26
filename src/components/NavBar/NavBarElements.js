@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 11;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -54,6 +54,7 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
+        margin-right: 36px;
     }
 `;
 
@@ -62,7 +63,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: 7px;
 
     @media screen and (max-width: 768px) {
         display: none;
