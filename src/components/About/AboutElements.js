@@ -20,6 +20,14 @@ export const ImgRow = styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
+
+    @media screen and (max-width: 622px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+
+        :nth-child(4) {
+        }
+    }
 `;
 
 export const ImgContainer = styled.picture`
@@ -28,9 +36,14 @@ export const ImgContainer = styled.picture`
     height: 50px;
 
     @media screen and (max-width: 960px) {
-        :last-of-type {
-            grid-column: span 2;
-            margin-left: 10%;
+        :nth-of-type(4) {
+            margin-left: 3vw;
+            margin-top: 4vw;
+        }
+
+        :nth-of-type(5) {
+            margin-left: 2vw;
+            margin-top: 4vw;
         }
     }
 `;

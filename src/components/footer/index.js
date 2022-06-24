@@ -51,21 +51,21 @@ const Footer = ({ primary, dark, dark2, buttonLabel }) => {
                             </FooterH2>
                         </FooterH2Wrap>
                         <FooterLabelWrap>
-                            <FooterLabel for="name">
+                            <FooterLabel htmlFor="name">
                                 <FooterInput
                                     type="text"
                                     placeholder="Your name"
                                     name="client-name"
                                 />
                             </FooterLabel>
-                            <FooterLabel for="email">
+                            <FooterLabel htmlFor="email">
                                 <FooterInput
                                     type="text"
                                     placeholder="Your email"
                                     name="client-email"
                                 />
                             </FooterLabel>
-                            <FooterLabel for="project-details">
+                            <FooterLabel htmlFor="project-details">
                                 <FooterInput
                                     type="text"
                                     placeholder="Project details"
